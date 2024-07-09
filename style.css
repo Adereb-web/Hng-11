@@ -18,25 +18,53 @@ body {
     line-height: 1.6;
 }
 
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
 /* Header styling */
 header {
     background-color: #007BFF; /* Primary blue */
     color: white;
-    padding: 2rem;
+    padding: 1rem 2rem;
     width: 100%;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px 8px 0 0;
 }
 
-/* Section styling */
-section {
-    background: white;
+/* Navigation styling */
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main section styling */
+main {
     padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 2rem;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 8px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Profile styling */
@@ -58,13 +86,23 @@ section {
     margin: 0.5rem 0;
 }
 
-/* Goals section styling */
-.goals h2 {
+/* Content section styling */
+.content-section {
+    margin: 2rem 0;
+}
+
+.content-section h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #007BFF; /* Primary blue */
 }
 
+.content-section p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Goals section styling */
 .goals ul {
     list-style: none;
     padding: 0;
@@ -94,6 +132,7 @@ footer {
     text-align: center;
     box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
     margin-top: auto;
+    border-radius: 0 0 8px 8px;
 }
 
 footer nav a {
@@ -108,14 +147,18 @@ footer nav a:hover {
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 600px) {
-    section {
+@media (max-width: 768px) {
+    .container {
         padding: 1rem;
-        margin: 1rem;
     }
-
-    footer nav a {
+    
+    nav a {
         display: block;
         margin: 0.5rem 0;
+    }
+    
+    .main-content {
+        flex-direction: column;
+        align-items: center;
     }
 }
