@@ -7,8 +7,8 @@ body, h1, h2, p, ul, nav {
 
 /* Overall body styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f4f8;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #B22222; /* Firebrick */
+    background-color: #007BFF; /* Primary blue */
     color: white;
     padding: 2rem;
     width: 100%;
@@ -49,7 +49,7 @@ section {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid #B22222; /* Firebrick */
+    border: 4px solid #007BFF; /* Primary blue */
     margin-bottom: 1rem;
 }
 
@@ -62,7 +62,7 @@ section {
 .goals h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #B22222; /* Firebrick */
+    color: #007BFF; /* Primary blue */
 }
 
 .goals ul {
@@ -79,7 +79,7 @@ section {
 
 .goals ul li::before {
     content: "✔";
-    color: #B22222; /* Firebrick */
+    color: #007BFF; /* Primary blue */
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -87,17 +87,17 @@ section {
 
 /* Footer styling */
 footer {    
-    background-color: #b22222cb;
+    background-color: #007bffb3; /* Semi-transparent primary blue */
     color: white;
     padding: 1rem;
     width: 100%;
     text-align: center;
-    box-shadow: 0 -4px 6px rgba(228, 9, 9, 0.1);
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
     margin-top: auto;
 }
 
 footer nav a {
-    color: #ffffff; /* Firebrick */
+    color: #ffffff;
     margin: 0 1rem;
     text-decoration: none;
     font-size: 1.1rem;
@@ -119,3 +119,10 @@ footer nav a:hover {
         margin: 0.5rem 0;
     }
 }
+```
+
+Changes made:
+
+- Updated font family to 'Roboto'.
+- Changed the primary color scheme to shades of blue (`#007BFF` for primary blue and `#007bffb3` for a semi-transparent variant).
+- Adjusted the box shadow for the footer to match the new color scheme.
