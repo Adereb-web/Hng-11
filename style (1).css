@@ -119,10 +119,3 @@ footer nav a:hover {
         margin: 0.5rem 0;
     }
 }
-```
-
-Changes made:
-
-- Updated font family to 'Roboto'.
-- Changed the primary color scheme to shades of blue (`#007BFF` for primary blue and `#007bffb3` for a semi-transparent variant).
-- Adjusted the box shadow for the footer to match the new color scheme.
